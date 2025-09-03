@@ -1,0 +1,27 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- DB Connection -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hospital_db?createDatabaseIfNotExist=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">12345</property>
+
+        <!-- Hibernate Settings -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Mapped Classes -->
+        <mapping class="com.hsptMgmt.entity.Patient"/>
+		<mapping class="com.hsptMgmt.entity.Doctor"/>
+		<mapping class="com.hsptMgmt.entity.Department"/>
+		<mapping class="com.hsptMgmt.entity.Slot"/>
+		<mapping class="com.hsptMgmt.entity.Appointment"/>
+		<mapping class="com.hsptMgmt.entity.HospitalStaff"/>
+		<mapping class="com.hsptMgmt.entity.Prescription"/>
+		<mapping class="com.hsptMgmt.entity.MedicalHistory"/>
+		<mapping class="com.hsptMgmt.entity.Payment"/>
+		<mapping class="com.hsptMgmt.entity.Notification"/>
+
+    </session-factory>
+</hibernate-configuration>
