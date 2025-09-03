@@ -22,4 +22,4 @@ A console-based Java + Hibernate application for managing hospital operations.
 ## How to Run
 1. Clone repo:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/hospital-management-system.git
+   git clone https://github.com/Flutter-Harsaaa/hospital-management-system.git
